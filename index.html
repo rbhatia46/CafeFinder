@@ -4,17 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCfQVyk9G3EJZV4S9veNijBAft4IGE5bJI"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCfQVyk9G3EJZV4S9veNijBAft4IGE5bJI&callback=init" async defer></script>
+  <link rel="stylesheet" href="./css/styles.css">
 
   <title>Daterr - The Location App</title>
 </head>
 <body>
-
-  <div id="map">
+  <div id="map"></div>
+  <div class="user-controls">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1">
+          <div class="input-group">
+              <input type="text" class="form-control location-filter" placeholder="Find a Café near you" aria-label="Find a Café near you">
+              <span class="input-group-btn">
+                <button class="btn btn-primary location-filter-btn" type="button">Search</button>
+              </span>
+            </div>
+        </div>
+    </div>    
+  </div>
 </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="./js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
