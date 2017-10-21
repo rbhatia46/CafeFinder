@@ -1,14 +1,27 @@
-*,#map{
+body, html {
   margin:0;
   padding:0;
-  height:100%;
+  height: 100%;
+  width: 100%;
+}
+
+div#map {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .scrollFix {
-    line-height: 0.1;
-    overflow: hidden;
-    white-space: nowrap;
-    float:left;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+  line-height: 0.1;
+  overflow: hidden;
+  white-space: nowrap;
+  float:left;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.user-controls {
+  position: absolute;
+  top: 10px;
 }
