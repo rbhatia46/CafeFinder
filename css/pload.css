@@ -24,7 +24,7 @@ h1{
 }
 
 /*Content Alignment*/
-.content{
+.inner{
 		
 	display: table-cell;
 	vertical-align: middle;
